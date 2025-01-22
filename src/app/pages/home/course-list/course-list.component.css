@@ -1,0 +1,37 @@
+.course-list-container {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+
+  .course-title {
+    text-align: center;
+  }
+
+  .course-button {
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    margin-inline: auto;
+  }
+
+  .course-list {
+    width: 60%;
+    margin-inline: auto;
+
+    .course-item {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between;
+
+      .course-item-button {
+        cursor: pointer;
+        width: 50px;
+        height: 25px;
+      }
+    }
+  }
+  .loading {
+    margin-inline: auto;
+  }
+}

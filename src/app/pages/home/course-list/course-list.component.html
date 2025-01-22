@@ -1,0 +1,25 @@
+<div class="course-list-container">
+  <h1 class="course-title">Lista de cursos</h1>
+
+  <button (click)="goToCourse()" class="course-button">Ver</button>
+
+  @if (courseList$ | async; as courseList) {
+  <ul class="course-list">
+    @for (course of courseList; track course) {
+    <li class="course-item">
+      <p class="course-item-title">{{ course.title }}</p>
+
+      <button
+        (click)="goToCourseItem(course.seccourseId)"
+        class="course-item-button"
+      >
+        Ver
+      </button>
+    </li>
+    }
+  </ul>
+
+  } @else {
+  <p class="loading">Loading...</p>
+  }
+</div>
