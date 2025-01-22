@@ -15,4 +15,8 @@ export class CourseService {
   getAllCourses(): Observable<ISecondaryCourse[]> {
     return this.http.get<ISecondaryCourse[]>(this.api_url);
   }
+
+  getCourseById(id: number): Observable<ISecondaryCourse> {
+    return this.http.get<ISecondaryCourse>(`${this.api_url}/${id}`);
+  }
 }

@@ -1,1 +1,9 @@
-<p>course-item works!</p>
+<div class="course-item-container">
+  @if (courseItem$ | async; as courseItem) {
+  <h2>{{ courseItem.title }}</h2>
+  <p>{{ courseItem.description }}</p>
+
+  } @else {
+  <p>Loading...</p>
+  }
+</div>

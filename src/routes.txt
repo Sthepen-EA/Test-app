@@ -1,0 +1,17 @@
+/course-list
+/course-list/course
+/course-list/course/3
+/course-list/course/5
+/course-list/course/1
+/course-list/course/9
+/course-list/course/10
+/course-list/course/13
+/course-list/course/11
+/course-list/course/8
+/course-list/course/12
+/course-list/course/4
+/course-list/course/2
+/course-list/course/6
+/course-list/course/14
+/course-list/course/7
+/course-list/course/15
