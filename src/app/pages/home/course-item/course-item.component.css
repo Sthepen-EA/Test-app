@@ -1,8 +1,17 @@
 .course-item-container {
   width: 60%;
   margin-inline: auto;
+  display: flex;
+  flex-flow: column nowrap;
 
   h2 {
     text-align: center;
+  }
+
+  .course-item-button {
+    cursor: pointer;
+    width: fit-content;
+    height: 25px;
+    margin-inline: auto;
   }
 }
